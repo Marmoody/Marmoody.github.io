@@ -1,0 +1,336 @@
+*{
+    font-family: 'VT323';
+    font-size: 18px;
+}
+
+hr{
+    border: 1px solid;
+}
+
+.heading {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.heading h1{
+    font-size: 3rem;
+    color: lightcoral;
+}
+
+.character-selection{
+    width: 40%;
+    display: grid;
+    gap: 30px;
+    grid-template: 80px / 40% 40%;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.character-type{
+    background-color: lightgrey;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    margin: 10px 5px;
+    padding: 0  5px;
+}
+
+.character-type p{
+    font-size: 1.5rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .character-type p{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }  
+}
+
+@media only screen and (max-width: 800px) {
+    .character-type {
+        font-size: 1.2rem;
+    }
+    .character-selection{
+        width: 35%;
+        display: grid;
+        grid-template: 80px / 50% 50%;
+        justify-items: center;
+        margin: 30px auto 10px;
+    }
+}
+
+.character-area{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.character{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 70%;
+    height: 20%;
+    margin: 0 auto 50px;
+    font-size: 1.3rem;
+}
+
+.character-info{
+    background-color: lightgrey;
+    width: 40%;
+    height: 350px;
+    max-height: 400px;
+    min-width: 220px;
+    padding: 0 10px;
+    text-align: left;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+}
+
+@media only screen and (max-width: 1000px ) {
+    .character-info{
+        min-height: 400px;
+        width: 100%;
+    }
+}
+
+.character-info p{
+    font-size: 1.2rem;
+}
+
+.info-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template: 50px 50px 50px / 40% 40%;
+    column-gap: 50px;
+}
+
+.stats {
+    font-size: 1.3rem;
+}
+
+.bars img {
+    width: 100%;
+}
+
+.character-info h4{
+    color: lightcoral;
+    font-size: 1.3rem;
+    margin: 0 0 20px;
+}
+
+.character-img-container {
+    width: 30%;
+    min-width: 220px;
+    max-height: 348px;
+    min-height: 348px;
+    margin-left: 50px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    display: flex;
+}
+
+.character-img{
+    display: inline;
+    width: 100%;
+    max-width: 298px;
+    height: auto;
+    max-height: 298px;
+    margin: auto auto;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 800px){
+    .character-img-container {
+        margin: 20px auto;
+        width: 30%;
+        min-width: 220px;
+        min-height: 220px;
+        border-right: 5px solid;
+        border-bottom: 5px solid;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        display: flex;
+    }
+    .character-img {
+        width: 180px;
+        height: 180px;
+        display: inline;
+        vertical-align: middle;
+        margin: auto auto;
+    }
+}
+
+.character-eigenschaften{
+    width: 70%;
+    padding: 10px;
+    background-color: lightgrey;
+    display: inline-block; 
+    text-align: left;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.character-eigenschaften ul li{
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+.character-eigenschaften img{
+    margin: 10px;
+}
+
+.coin-img{
+    width: 20px;
+}
+
+.traits {
+    width: inherit;
+    display: grid;
+    grid-template: 50px 50px 50px 50px / 10% 50%;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px auto 30px;
+}
+
+.traits div {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 800px){
+    .traits {
+        width: inherit;
+        display: grid;
+        grid-template: 70px 70px 70px 70px / 10% 70%;
+        gap: 20px;
+    }  
+}
+
+.traits-heading{
+    margin-top: 10px;
+}
+
+.traits-heading img{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.traits-heading h2{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.skills{
+    width: 80%;
+    text-align: center;
+    display: grid;
+    grid-template: 90px 90px/ 30% 30% 30%;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    font-size: 1.3rem;
+}
+
+.skill-box p{
+    font-size: 1.3rem;
+    margin: 10px 0 0 0;
+}
+
+.diamond{
+    width: 100px;
+}
+
+.quest-section{
+    text-align: center;
+}
+
+.quests{
+    width: 70%;
+    background-color: lightgray;
+    margin: 20px auto;
+    text-align: left;
+    padding: 10px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.current-quest-heading h2{
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 25px;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.current-quest-heading img{
+    display: inline-block;
+}
+
+.employer {
+    text-align: left;
+    width: 90%;
+}
+
+.employer h3 {
+    font-size: 1.3rem;
+}
+
+.employer p {
+    font-size: 1.3rem;
+}
+
+.otto-wilde{
+    display: grid;
+    grid-template: 100px 200px / 30% 70%; 
+    column-gap: 5px;
+    justify-items: center;
+}
+
+.KPMG{
+    display: grid;
+    grid-template: 150px / 30% 70%; 
+    column-gap: 5px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.job-description{
+    width: 90%;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.job-description h3{
+    font-size: 1.3rem;
+}
+
+.job-description li{
+    font-size: 1.3rem;
+}
+
+.completed-quest-heading {
+    margin-top: 30px;
+}
+
+.completed-quest-heading h2{
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 25px;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.completed-quest-heading img{
+    display: inline-block;
+    width: 30px;
+}
+
+.hr-small{
+    width: 40%;
+    border: 1px solid darkgray;
+}
