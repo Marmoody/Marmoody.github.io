@@ -64,7 +64,7 @@ hr{
     text-align: center;
     margin: 0 auto;
 }
-/*adfasfd*/
+
 .character{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -317,7 +317,7 @@ hr{
 
 @media only screen and (max-width: 800px) {
     .otto-wilde {
-        grid-template: 100px 500px / 30% 70%; 
+        grid-template: 100px 700px / 30% 70%; 
     }
 }
 
@@ -345,7 +345,7 @@ hr{
 
 @media only screen and (max-width: 800px) {
     .KPMG {
-        grid-template: 100px 220px / 30% 70%; 
+        grid-template: 100px 280px / 30% 70%; 
     }
 }
 
