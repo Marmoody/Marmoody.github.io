@@ -3,6 +3,10 @@
     font-size: 18px;
 }
 
+body{
+    background-color: #D3E4CD;
+}
+
 hr{
     border: 1px solid;
 }
@@ -14,7 +18,6 @@ hr{
 
 .heading h1{
     font-size: 3rem;
-    color: lightcoral;
 }
 
 .character-selection{
@@ -27,9 +30,9 @@ hr{
 }
 
 .character-type{
-    background-color: lightgrey;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
+    background-color: #99A799;
+    border-right: 5px solid lightgrey;
+    border-bottom: 5px solid lightgrey;
     margin: 10px 5px;
     padding: 0  5px;
 }
@@ -76,7 +79,7 @@ hr{
 }
 
 .character-info{
-    background-color: lightgrey;
+    background-color: #99A799;
     width: 40%;
     height: 350px;
     max-height: 400px;
@@ -114,12 +117,12 @@ hr{
 }
 
 .character-info h4{
-    color: lightcoral;
     font-size: 1.3rem;
     margin: 0 0 20px;
 }
 
 .character-img-container {
+    background-color: #99A799;
     width: 30%;
     min-width: 220px;
     max-height: 348px;
@@ -166,7 +169,7 @@ hr{
 .character-eigenschaften{
     width: 70%;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #99A799;
     display: inline-block; 
     text-align: left;
     border-right: 5px solid;
@@ -213,16 +216,15 @@ hr{
 }
 
 .traits-heading img{
-    display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 20px 0 20px 0;
+    width: 5%;
 }
 
 .traits-heading h2{
-    display: inline-block;
     margin: 0;
     vertical-align: middle;
     padding-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .skills{
@@ -263,7 +265,7 @@ hr{
 
 .quests{
     width: 70%;
-    background-color: lightgray;
+    background-color: #99A799;
     margin: 20px auto;
     text-align: left;
     padding: 10px;
@@ -277,16 +279,20 @@ hr{
     }
 }
 
+.current-quest-heading {
+    margin-top: 30px;
+}
+
 .current-quest-heading h2{
-    display: inline-block;
     margin: 0;
     padding-bottom: 25px;
     vertical-align: middle;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .current-quest-heading img{
-    display: inline-block;
+    width: 5%;
+    margin-bottom: 20px;
 }
 
 .employer {
