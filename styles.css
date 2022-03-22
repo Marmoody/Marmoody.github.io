@@ -18,11 +18,7 @@ hr{
 }
 
 .heading h1{
-<<<<<<< HEAD
     font-size: 4rem;
-=======
-    font-size: 3rem;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
 }
 
 .character-selection{
@@ -36,14 +32,8 @@ hr{
 
 .character-type{
     background-color: #99A799;
-<<<<<<< HEAD
     box-shadow: 5px 5px grey;
     margin: 10px 10px;
-=======
-    border-right: 5px solid lightgrey;
-    border-bottom: 5px solid lightgrey;
-    margin: 10px 5px;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
     padding: 0  5px;
 }
 
@@ -132,11 +122,7 @@ hr{
 
 .character-img-container {
     background-color: #99A799;
-<<<<<<< HEAD
     width: 40%;
-=======
-    width: 30%;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
     min-width: 220px;
     max-height: 348px;
     min-height: 348px;
@@ -177,7 +163,6 @@ hr{
     width: 70%;
     padding: 10px;
     background-color: #99A799;
-<<<<<<< HEAD
     display: grid;
     grid-template: 350px / 50% 20px 50%;
     align-items: center;
@@ -189,12 +174,6 @@ hr{
     height: 250px;
     width: 5px; 
     background-color: grey;
-=======
-    display: inline-block; 
-    text-align: left;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
 }
 
 .character-eigenschaften ul li{
@@ -253,22 +232,13 @@ hr{
 }
 
 .traits-heading img{
-<<<<<<< HEAD
     margin: 20px 20px;
     width: 15%;
-=======
-    margin: 20px 0 20px 0;
-    width: 5%;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
 }
 
 .traits-heading h2{
     margin: 0;
     vertical-align: middle;
-<<<<<<< HEAD
-=======
-    padding-bottom: 30px;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
     font-size: 2rem;
 }
 
@@ -319,11 +289,7 @@ hr{
 .quests{
     width: 70%;
     background-color: #99A799;
-<<<<<<< HEAD
     margin: 10px auto;
-=======
-    margin: 20px auto;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
     text-align: left;
     padding: 10px;
     box-shadow: 5px 5px grey;
@@ -345,32 +311,18 @@ hr{
 }
 
 .current-quest-heading {
-<<<<<<< HEAD
     width: 71%;
     margin: 30px auto 10px;
 }
 
 .current-quest-heading h2{
-=======
-    margin-top: 30px;
-}
-
-.current-quest-heading h2{
-    margin: 0;
-    padding-bottom: 25px;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
     vertical-align: middle;
     font-size: 2rem;
 }
 
 .current-quest-heading img{
-<<<<<<< HEAD
     width: 15%;
     padding: 0 20px;
-=======
-    width: 5%;
-    margin-bottom: 20px;
->>>>>>> b59f6ac70f030c8b7d4da921241e4ac061b7e545
 }
 
 .employer {
