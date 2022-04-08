@@ -8,11 +8,45 @@
 
 body{
     background-color: #D3E4CD;
+    margin: 0;
 }
 
 hr{
     width: 40%;
     border: 1px solid darkgray;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #99A799; 
+}
+
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #99A799;    
+}
+.navLogo {
+    margin: 0 auto 0 30px;
+    width: 50px;
+}
+
+.menu {
+    text-align: center;
+    margin: 10px 10px 10px auto;
+}
+
+.menuLink {
+    margin: 0 20px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
 }
 
 .heading {
@@ -117,8 +151,6 @@ hr{
     margin: auto auto;
     vertical-align: middle;
 }
-
-
 
 .character-eigenschaften{
     width: 70%;
@@ -377,9 +409,40 @@ hr{
 }
 
 @media only screen and (max-width: 900px) {
+    .navigation {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #99A799; 
+    }
+    .navbar {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #99A799;    
+    }
+    .navLogo {
+        margin: 0 auto 0 10px;
+        width: 50px;
+    }
+    .menu {
+        text-align: center;
+    }
+    .menuLink {
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+    }
     .character-type {
         font-size: 1rem;
         width: 100%;
+    }
+    .heading h1 {
+        font-size: 3rem;
     }
     .character-type p{
         font-size: 1.1rem;
