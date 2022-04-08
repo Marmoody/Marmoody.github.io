@@ -621,3 +621,28 @@ button {
 #realMariusDescription {
     text-align: left;
 }
+
+@media only screen and (max-width: 900px) {
+
+    .personalInfo h1 {
+        font-size: 1.5rem;
+    }
+    .personalInfo h2 {
+        font-size: 1rem;
+    }
+    button {
+        width: 35%;
+        height: 40px;
+        font-size: 1rem; 
+        background-color: #99A799;
+        box-shadow: 5px 5px grey;
+        margin: 10px 10px;
+        padding: 0  5px;
+    }
+    .realMariusDescription {
+        width: 70%;
+    }
+    .personalInfo img {
+        width: 50%;
+    }
+}
