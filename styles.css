@@ -37,6 +37,10 @@ hr{
     width: 50px;
 }
 
+.navLogo:hover {
+    width: 55px;
+}
+
 .menu {
     text-align: center;
     margin: 10px 10px 10px auto;
@@ -47,6 +51,10 @@ hr{
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+}
+
+.menuLink:hover {
+    color: #D3E4CD;
 }
 
 .heading {
@@ -576,4 +584,40 @@ hr{
     .tutorials{
         display: block;
     }
+}
+
+/*ABOUT ME PAGE*/
+
+.personalInfo {
+    text-align: center;
+    align-content: center;
+    margin: 20px auto;
+}
+
+.personalInfo h1 {
+    font-size: 2rem;
+}
+
+.personalInfo h2 {
+    font-size: 1.5rem;
+}
+
+.realMarius {
+    width: 30%;
+    border-radius: 5%;
+}
+
+button {
+    width: 10%;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.realMariusDescription {
+    width: 50%;
+    margin: 20px auto; 
+}
+
+#realMariusDescription {
+    text-align: left;
 }
