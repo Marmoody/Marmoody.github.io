@@ -65,7 +65,7 @@ hr{
 .character-info{
     background-color: #99A799;
     width: 40%;
-    height: 350px;
+    height: 380px;
     max-height: 400px;
     min-width: 220px;
     padding: 0 10px;
@@ -101,8 +101,8 @@ hr{
     background-color: #99A799;
     width: 40%;
     min-width: 220px;
-    max-height: 348px;
-    min-height: 348px;
+    max-height: 378px;
+    min-height: 378px;
     margin-left: 50px;
     box-shadow: 5px 5px grey;
     display: flex;
@@ -201,7 +201,9 @@ hr{
     vertical-align: middle;
     font-size: 2rem;
 }
-
+.hrTraits {
+    display: none;
+}
 .skills{
     width: 80%;
     text-align: center;
@@ -414,10 +416,13 @@ hr{
         height: 800px;
         background-color: #99A799;
         display: grid;
-        grid-template: 400px 400px / 95%;
+        grid-template: 400px 10px 400px / 95%;
         align-items: center;
         box-shadow: 5px 5px grey;
         margin: 0 auto;
+    }
+    .hrTraits {
+        display: block;
     }
     .traits {
         width: inherit;
@@ -484,22 +489,28 @@ hr{
         padding: 0 10px;
     }
     .logo{
-        min-width: 80%;
+        width: 30%;
     }
     .quests-two{
         width: 90%;
     }
     .otto-wilde {
-        grid-template: 100px 700px / 30% 70%; 
+        display: block;
+    }
+    .employer {
+        text-align: center;
+    }
+    .KPMG {
+        display: block;
+    }
+    .job-description h3{
+        text-align: center;
     }
     .KPMG {
         grid-template: 100px 280px / 30% 70%;
         gap: 10px; 
     }
     .tutorials{
-        display: grid;
-        grid-template: 180px / 35% 65%; 
-        column-gap: 20px;
-        margin-bottom: 50px;
+        display: block;
     }
 }
