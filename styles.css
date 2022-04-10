@@ -53,6 +53,15 @@ hr{
     font-size: 1.2rem;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D3E4CD;
+}
+
 .menuLink:hover {
     color: #D3E4CD;
 }
@@ -102,6 +111,10 @@ hr{
     height: 20%;
     margin: 0 auto 50px;
     font-size: 1.3rem;
+}
+
+.char-button:hover {
+    color: #D3E4CD;
 }
 
 .character-info{
@@ -609,17 +622,26 @@ hr{
 
 button {
     width: 10%;
-    height: 50px;
-    font-size: 1.2rem;
+    height: 40px;
+    font-size: 1rem; 
+    background-color: #99A799;
+    box-shadow: 5px 5px grey;
+    margin: 10px 10px;
+    padding: 0  5px;
+    }
 }
 
 .realMariusDescription {
     width: 50%;
-    margin: 20px auto; 
+    margin: 20px auto;
+    align-items: center;
 }
 
 #realMariusDescription {
     text-align: left;
+    width: 50%;
+    margin: 20px auto;
+    align-items: center;
 }
 
 @media only screen and (max-width: 900px) {
