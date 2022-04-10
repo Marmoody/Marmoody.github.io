@@ -715,3 +715,27 @@ input[type=text], select, textarea {
     width: 70%;
     margin: 40px auto 0;
   }
+
+
+  /*Project Page*/
+
+  .projectHeading {
+      font-size: 2rem;
+      text-align: center;
+      margin: 50px auto;
+  }
+
+  .projects {
+      width: 70%;
+      display: grid; 
+      grid-template: 300px 300px / 45% 45%;
+      gap: 30px 80px;
+      align-self: space-between;
+      margin: 0 auto;
+  }
+  .project {
+      width: 400px;
+      height: 300px; 
+      border: 1px solid black;
+      box-shadow: 5px 5px grey;
+  }
