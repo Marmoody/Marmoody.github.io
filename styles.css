@@ -677,6 +677,8 @@ button {
         box-shadow: 5px 5px grey;
         margin: 10px 10px;
         padding: 0  5px;
+        border-color: black;
+        color: black;
     }
     #realMariusDescription {
         width: 70%;
