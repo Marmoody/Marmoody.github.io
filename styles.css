@@ -620,8 +620,9 @@ a:hover {
 }
 
 .realMarius {
-    width: 30%;
+    width: 70%;
     border-radius: 5%;
+    margin-left: auto;
 }
 
 button {
@@ -634,18 +635,30 @@ button {
     padding: 0  5px;
     }
 
+.aboutInfo {
+    display: grid;
+    grid-template: 650px / 50% 50%; 
+    gap: 30px;
+    margin: 30px auto 30px;
+}
 
 .realMariusDescription {
-    width: 50%;
-    margin: 20px auto;
+    width: 80%;
+    margin-right: auto;
     align-items: center;
 }
 
 #realMariusDescription {
     text-align: left;
-    width: 50%;
-    margin: 20px auto;
+    width: 70%;
+    margin-right: auto;
     align-items: center;
+    font-size: 1.5rem;
+}
+
+.realMariusDescription li {
+    font-size: 1.3rem;
+    line-height: 120%
 }
 
 @media only screen and (max-width: 900px) {
@@ -667,10 +680,23 @@ button {
     }
     #realMariusDescription {
         width: 70%;
+        margin: 10px auto 30px;
     }
     .personalInfo img {
-        width: 50%;
+        width: 60%;
+        margin: 10px auto;
     }
+    .aboutInfo {
+        display: grid;
+        grid-template: 350px 300px / 100%; 
+        gap: 10px;
+        margin: 30px auto;
+    }
+    .realMariusDescription li {
+        font-size: 1rem;
+        line-height: 120%
+    }
+
 }
 
 /*Contact Me Form*/
