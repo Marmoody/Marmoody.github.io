@@ -748,7 +748,7 @@ input[type=text], select, textarea {
   /*Project Page*/
 
   .projectHeading {
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
       margin: 50px auto;
   }
@@ -757,10 +757,15 @@ input[type=text], select, textarea {
       width: 70%;
       height: 800px;
       display: grid; 
-      grid-template: 400px 400px / 50% 50%;
+      grid-template: 430px 430px / 50% 50%;
       gap: 30px 50px;
       margin: 0 auto;
   }
+
+    .projects h3 {
+        font-size: 1.5rem;
+    }
+
   .project {
       width: 100%;
       height: 300px; 
@@ -768,11 +773,15 @@ input[type=text], select, textarea {
       box-shadow: 5px 5px grey;
   }
 
+  .project:hover {
+      transform: scale(101%);
+  }
+
   @media only screen and (max-width: 900px) {
     .projects {
         width: 80%;
         display: grid; 
-        grid-template: 300px 300px 300px 300px / 100%;
+        grid-template: 330px 330px 330px 330px / 100%;
         gap: 30px;
         margin: 0 auto;
     }
@@ -781,5 +790,8 @@ input[type=text], select, textarea {
         height: auto; 
         border: 1px solid black;
         box-shadow: 5px 5px grey;
+    }
+    .projectHeading {
+        font-size: 2rem;
     }
   }
