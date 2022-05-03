@@ -20,16 +20,17 @@ hr{
     display: flex;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: #99A799; 
 }
 
 .navbar {
     display: flex;
-    height: 50px;
+    height: 60px;
     width: 70%;
     margin: 0 auto;
+    align-items: center;
     background-color: #99A799;    
 }
 .navLogo {
@@ -39,6 +40,13 @@ hr{
 
 .navLogo:hover {
     width: 55px;
+}
+
+.homeMenu {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    display: none;
+    transition: all 1s;
 }
 
 .menu {
@@ -73,6 +81,30 @@ a:hover {
 
 .heading h1{
     font-size: 4rem;
+}
+
+.arrows{
+    display: grid;
+    width: 40%;
+    grid-template: 50px / 40% 40%;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowGif{
+    width: 20%;
+}
+
+#arrowGifOne {
+    justify-self: center;
+    visibility: hidden;
+}
+
+#arrowGifTwo {
+    justify-self:  center;
+    visibility: hidden;
 }
 
 .character-selection{
@@ -443,12 +475,13 @@ a:hover {
         display: flex;
         height: 80px;
         width: 100%;
+        align-items: center;
         margin: 0 auto 50px;
         background-color: #99A799;    
     }
     .navLogo {
         margin: 15px auto 0 10px;
-        width: 50px;
+        width: 60px;
     }
     .menu {
         text-align: center;
@@ -472,6 +505,18 @@ a:hover {
     .character-type p{
         font-size: 1.1rem;
         margin-top: 5px;
+    }
+    .arrows{
+        display: none
+    }
+    .arrowGif{
+        width: 20%;
+    }
+    #arrowGifOne {
+        display: none
+    }
+    #arrowGifTwo {
+        display: none
     }
     .character-selection{
         width: 35%;

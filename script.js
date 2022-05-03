@@ -1,7 +1,12 @@
 
 //defining variable
+const arrowOne = document.getElementById('arrowGifOne');
+const arrowTwo = document.getElementById('arrowGifTwo');
 const buttonOne = document.getElementById('button-one');
 const buttonTwo = document.getElementById('button-two');
+//Menulogo
+const logo = document.getElementById('navLogo');
+const home = document.getElementById('homeMenu');
 //character
 let characterImage = document.getElementById('char-img');
 let charDescription = document.getElementById('char-description');
@@ -24,7 +29,34 @@ let coinFive = document.getElementById('coinFive');
 let coinSix = document.getElementById('coinSix');
 
 
+//logo hover effect
+
+logo.onmouseover = () => {
+    homeMenu.style.display = "inline";
+}
+
+logo.onmouseout = () => {
+    homeMenu.style.display = "none";
+}
+
+
 //button click effect
+buttonOne.onmouseover = () => {
+    arrowOne.style.visibility = 'visible';
+}
+
+buttonOne.onmouseleave = () => {
+    arrowOne.style.visibility = 'hidden';
+}
+
+buttonTwo.onmouseover = () => {
+    arrowTwo.style.visibility = 'visible';
+}
+
+buttonTwo.onmouseleave = () => {
+    arrowTwo.style.visibility = 'hidden';
+}
+
 buttonOne.onmousedown = () => {
     buttonOne.style.backgroundColor = "grey";
 }
