@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/png" href="imgs/Marius Sprite.gif" sizes="32x32" />
+    <link rel="icon" type="image/png" href="imgs/Marius Logo.png" sizes="32x32" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/39a0a5e4f3.js" crossorigin="anonymous"></script>
@@ -14,8 +14,19 @@
     <title>Marius Westers</title>
 </head>
 <body>
+    <section class="navigation">
+        <div class="navbar">
+            <a href="index.html"><img src="imgs/Marius Logo.png" alt="" class="navLogo"></a>
+            <div class="menu">
+                <a href="https://www.linkedin.com/in/marius-westers-6aba8783/" class="menuLink">LinkedIn</a>
+                <a href="contact.html" class="menuLink">Contact Me</a>
+                <a href="projects.html" class="menuLink">My Projects</a>
+                <a href="aboutme.html" class="menuLink">About Me</a>
+            </div>
+        </div>
+    </section>
     <section class="character-area">
-        <div class="heading"><h1>Choose your character</h1></div>
+        <div class="heading"><h1>Choose your character!</h1></div>
         <hr>
         <div class="character-selection">
             <div id="button-one" class="character-type char-button"><p>Business Marius</p></div>
@@ -35,7 +46,7 @@
                         <div class="bars"><img src="imgs/Experiencebalken.png" alt=""></div>
                     </div>    
                     <h4>Description</h4>
-                    <p id ="char-description" class="description">Business Marius is an allrounder who can pick up any skill up to a certain level. Her performs best if supported by a teammate.</p>
+                    <p id ="char-description" class="description">Business Marius is an allrounder who can pick up any skill in a short amount of time. He performs best if supported by a teammate. Strategic topics give him a boost while repeating to Dos slow him down.</p>
                 </div>
                 <div class="character-img-container">
                     <img id="char-img" class="character-img" src="imgs/Marius Sprite.gif" alt="">
@@ -43,7 +54,6 @@
         </div>
 
         <!-- https://stickershop.line-scdn.net/stickershop/v1/product/7054736/LINEStorePC/main.png;compress=true  -->
-
 
         <div class="traits-heading">
             <div class="traits-heading-bg">
@@ -59,30 +69,31 @@
                 <div class="icon-text-grid"><img src="imgs/commitment.png" alt="" class="skill-icons"><div id="skillFour">100% committment to the company/product</div></div>
             </div>
             <div class="vertical-line"></div>
+            <hr class="hrTraits">
             <div class="skills">
                 <div class="skill-box">
-                    <p>Project Management</p>
-                    <img class="diamond" src="imgs/three_coins.png">
+                    <p id="traitOne">Project Management</p>
+                    <img class="diamond" id="coinOne" src="imgs/three_coins.png">
                 </div>
                 <div class="skill-box">
-                    <p>Business Development</p>
-                    <img class="diamond" src="imgs/three_coins.png">
+                    <p id="traitTwo">Business Development</p>
+                    <img class="diamond" id="coinTwo" src="imgs/three_coins.png">
                 </div>
                 <div class="skill-box">
-                    <p>Strategic Planning</p>
-                    <img class="diamond" src="imgs/two_coins.png">
+                    <p id="traitThree">Strategic Planning</p>
+                    <img class="diamond" id="coinThree" src="imgs/two_coins.png">
                 </div>
                 <div class="skill-box">
-                    <p>Marketing / Sales</p>
-                    <img class="diamond" src="imgs/three_coins.png">
+                    <p id="traitFour">Marketing / Sales</p>
+                    <img class="diamond" id="coinFour" src="imgs/three_coins.png">
                 </div>
                 <div class="skill-box">
-                    <p>Analytical Thinking</p>
-                    <img class="diamond" src="imgs/two_coins.png">
+                    <p id="traitFive">Analytical Methods</p>
+                    <img class="diamond" id="coinFive" src="imgs/two_coins.png">
                 </div>
                 <div class="skill-box">
-                    <p>Team Lead</p>
-                    <img class="diamond" src="imgs/two_coins.png">
+                    <p id="traitSix">Team Lead</p>
+                    <img class="diamond" id="coinSix" src="imgs/two_coins.png">
                 </div>
             </div>
         </div>
@@ -90,7 +101,7 @@
     <section class="quest-section">
         <div class="current-quest-heading">
             <div class="traits-heading-bg">
-                <img src="imgs/Ausrufezeichen.png" alt="exclamation point">
+                <img src="imgs/questionmark.png" alt="exclamation point">
             <h2>Current Quest</h2>
             </div>
         </div>
@@ -105,7 +116,7 @@
                     <div class="job-description">
                         <h3>Sales Manager DACH and International Business Development</h3>
                         <ul>
-                            <li>Opening an innovative Flagship Store</li>
+                            <a href="https://www.ottowildegrillers.com/collections/flagshipstore"><li>Opening an innovative Flagship Store</li></a>
                             <li>Planning and implementation of a selective retail network for the DACH region</li>
                             <li>Implementation of international growth strategy with selection of premium distribution partners.</li>
                         </ul>
@@ -115,7 +126,7 @@
         </div>
         <div class="current-quest-heading">
             <div class="traits-heading-bg">
-                <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/22b22848ea88550.png" alt="pokal">
+                <img src="imgs/rufzeichen.png" alt="pokal">
                 <h2>Completed Quests</h2>
             </div>
         </div>
@@ -179,7 +190,7 @@
         </div>
         <div class="tutorial-heading">
             <div class="traits-heading-bg">
-                <img src="imgs/University.png" alt="pokal" class="university-icon" >
+                <img src="imgs/Hat.png" alt="pokal" class="university-icon" >
                 <h2>Completed Tutorials</h2>
             </div>
         </div>
@@ -217,7 +228,7 @@
                 <hr class="hr-small">
                 <div class="tutorials">
                     <div class="employer">
-                        <h3>Kaufmännische Schulen Rheine</h3>
+                        <h3>Kfm. Schulen Rheine</h3>
                         <p>August 2008 - June 2011</p>
                     </div>
                     <div class="job-description">

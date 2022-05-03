@@ -3,13 +3,67 @@
     font-size: 18px;
 }
 
+
+/*Desktop Viewport*/
+
 body{
     background-color: #D3E4CD;
+    margin: 0;
 }
 
 hr{
     width: 40%;
     border: 1px solid darkgray;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #99A799; 
+}
+
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #99A799;    
+}
+.navLogo {
+    margin: 0 auto 0 30px;
+    width: 50px;
+}
+
+.navLogo:hover {
+    width: 55px;
+}
+
+.menu {
+    text-align: center;
+    margin: 10px 10px 10px auto;
+}
+
+.menuLink {
+    margin: 0 20px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D3E4CD;
+}
+
+.menuLink:hover {
+    color: #D3E4CD;
 }
 
 .heading {
@@ -43,25 +97,6 @@ hr{
     margin-block-end: 0.5em;
 }
 
-@media only screen and (max-width: 1200px) {
-    .character-type p{
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-    }  
-}
-
-@media only screen and (max-width: 800px) {
-    .character-type {
-        font-size: 1.2rem;
-    }
-    .character-selection{
-        width: 35%;
-        display: grid;
-        grid-template: 80px / 50% 50%;
-        justify-items: center;
-        margin: 30px auto 10px;
-    }
-}
 
 .character-area{
     text-align: center;
@@ -78,22 +113,19 @@ hr{
     font-size: 1.3rem;
 }
 
+.char-button:hover {
+    color: #D3E4CD;
+}
+
 .character-info{
     background-color: #99A799;
     width: 40%;
-    height: 350px;
+    height: 380px;
     max-height: 400px;
     min-width: 220px;
     padding: 0 10px;
     text-align: left;
     box-shadow: 5px 5px grey;
-}
-
-@media only screen and (max-width: 1000px ) {
-    .character-info{
-        min-height: 400px;
-        width: 100%;
-    }
 }
 
 .character-info p{
@@ -124,8 +156,8 @@ hr{
     background-color: #99A799;
     width: 40%;
     min-width: 220px;
-    max-height: 348px;
-    min-height: 348px;
+    max-height: 378px;
+    min-height: 378px;
     margin-left: 50px;
     box-shadow: 5px 5px grey;
     display: flex;
@@ -139,24 +171,6 @@ hr{
     max-height: 298px;
     margin: auto auto;
     vertical-align: middle;
-}
-
-@media only screen and (max-width: 800px){
-    .character-img-container {
-        margin: 20px auto;
-        width: 30%;
-        min-width: 220px;
-        min-height: 220px;
-        box-shadow: 5px 5px grey;
-        display: flex;
-    }
-    .character-img {
-        width: 180px;
-        height: 180px;
-        display: inline;
-        vertical-align: middle;
-        margin: auto auto;
-    }
 }
 
 .character-eigenschaften{
@@ -204,14 +218,7 @@ hr{
     margin-left: 20px;
 }
 
-@media only screen and (max-width: 800px){
-    .traits {
-        width: inherit;
-        display: grid;
-        grid-template: 70px 70px 70px 70px / 10% 70%;
-        gap: 20px;
-    }  
-}
+
 
 .icon-text-grid{
     display: grid;
@@ -247,7 +254,9 @@ hr{
     vertical-align: middle;
     font-size: 2rem;
 }
-
+.hrTraits {
+    display: none;
+}
 .skills{
     width: 80%;
     text-align: center;
@@ -257,18 +266,6 @@ hr{
     justify-content: space-evenly;
     margin: 20px auto;
     font-size: 1.3rem;
-}
-
-@media only screen and (max-width: 800px){
-    .skills{
-        grid-template: 90px 90px 90px/ 30% 30%;
-        margin: 20px auto;
-        justify-content: space-around;
-    }
-    .character-eigenschaften{
-        width: 90%;
-    }
-    
 }
 
 .skill-box p{
@@ -310,12 +307,6 @@ hr{
     box-shadow: 5px 5px grey;
 }
 
-@media only screen and (max-width: 800px) {
-    .quests {
-        width: 90%;
-    }
-}
-
 .current-quest-heading {
     width: 71%;
     margin: 30px auto 10px;
@@ -351,18 +342,6 @@ hr{
     justify-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
-    .otto-wilde {
-        grid-template: 100px 250px / 30% 70%; 
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .otto-wilde {
-        grid-template: 100px 700px / 30% 70%; 
-    }
-}
-
 .KPMG{
     display: grid;
     grid-template: 200px / 30% 70%; 
@@ -385,11 +364,7 @@ hr{
     font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 800px) {
-    .KPMG {
-        grid-template: 100px 280px / 30% 70%; 
-    }
-}
+
 
 .completed-quest-heading {
     margin-top: 30px;
@@ -432,3 +407,391 @@ hr{
     margin: 0 20px;
     padding: 0;
 }
+
+
+/*Mobile Viewport*/
+
+
+@media only screen and (max-width: 1200px) {
+    .character-type p{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+    .otto-wilde {
+        grid-template: 100px 250px / 30% 70%; 
+    } 
+}
+
+@media only screen and (max-width: 1000px ) {
+    .character-info{
+        min-height: 400px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation {
+        display: flex;
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #99A799; 
+    }
+    .navbar {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        margin: 0 auto 50px;
+        background-color: #99A799;    
+    }
+    .navLogo {
+        margin: 15px auto 0 10px;
+        width: 50px;
+    }
+    .menu {
+        text-align: center;
+        display: grid;
+        grid-template: 25px 25px / 50% 50%;
+        gap: 10px;
+    }
+    .menuLink {
+        margin: 0 5px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+    }
+    .character-type {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .heading h1 {
+        font-size: 3rem;
+    }
+    .character-type p{
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+    .character-selection{
+        width: 35%;
+        display: grid;
+        grid-template: 80px / 50% 50%;
+        justify-items: center;
+        margin: 30px auto 10px;
+    }
+    .character{
+        width: 90%;
+    }
+    .character-img-container {
+        margin: 20px auto;
+        width: 30%;
+        min-width: 220px;
+        min-height: 220px;
+        box-shadow: 5px 5px grey;
+        display: flex;
+    }
+    .character-img {
+        width: 180px;
+        height: 180px;
+        display: inline;
+        vertical-align: middle;
+        margin: auto auto;
+    }
+    .character-eigenschaften{
+        width: 90%;
+        padding: 10px;
+        height: 800px;
+        background-color: #99A799;
+        display: grid;
+        grid-template: 400px 10px 400px / 95%;
+        align-items: center;
+        box-shadow: 5px 5px grey;
+        margin: 0 auto;
+    }
+    .hrTraits {
+        display: block;
+    }
+    .traits {
+        width: inherit;
+        display: grid;
+        grid-template: 70px 70px 70px 70px / 90%;
+    }
+    .icon-text-grid{
+        display: grid;
+        grid-template: 50px 50px 50px 50px / 20% 80%;
+        text-align: left;
+        gap: 20px;
+        align-items: center;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .traits-heading{
+        width: 70%;
+        margin: 10px auto;
+        align-content: center;
+    }
+    .traits-heading-bg{
+        width: 100%;
+        display: flex;
+        background-color: #99A799;
+        align-items: center;
+        box-shadow: 5px 5px grey;
+    }
+    .traits-heading-bg img{
+        min-width: 20%;
+    }
+    .traits-heading-bg h2{
+        font-size: 1.5rem;
+    }
+    .skills{
+        width: 100%;
+        grid-template: 100px 100px 100px/ 50% 50%;
+        margin: 10px auto 10px 10px;
+        justify-content: center;
+        margin: 20px auto;
+        font-size: 1.2rem;
+    }
+    .skill-box{
+        display: grid;
+        grid-template: 50px 60px / 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .quests {
+        width: 90%;
+    }
+    .current-quest-heading {
+        width: 70%;
+        margin: 30px auto 10px;
+        align-content: center;
+    }
+    .current-quest-heading h2{
+        vertical-align: middle;
+        font-size: 1.5rem;
+    }
+    .current-quest-heading img{
+        width: 10%;
+        padding: 0 10px;
+    }
+    .logo{
+        width: 30%;
+    }
+    .quests-two{
+        width: 90%;
+    }
+    .otto-wilde {
+        display: block;
+    }
+    .employer {
+        text-align: center;
+    }
+    .KPMG {
+        display: block;
+    }
+    .job-description h3{
+        text-align: center;
+    }
+    .KPMG {
+        grid-template: 100px 280px / 30% 70%;
+        gap: 10px; 
+    }
+    .tutorials{
+        display: block;
+    }
+}
+
+/*ABOUT ME PAGE*/
+
+.personalInfo {
+    text-align: center;
+    align-content: center;
+    margin: 20px auto;
+}
+
+.personalInfo h1 {
+    font-size: 2rem;
+}
+
+.personalInfo h2 {
+    font-size: 1.5rem;
+}
+
+.realMarius {
+    width: 70%;
+    border-radius: 5%;
+    margin-left: auto;
+}
+
+button {
+    width: 10%;
+    height: 40px;
+    font-size: 1rem; 
+    background-color: #99A799;
+    box-shadow: 5px 5px grey;
+    margin: 10px 10px;
+    padding: 0  5px;
+    }
+
+.aboutInfo {
+    display: grid;
+    grid-template: 650px / 50% 50%; 
+    gap: 30px;
+    margin: 30px auto 30px;
+}
+
+.realMariusDescription {
+    width: 80%;
+    margin-right: auto;
+    align-items: center;
+}
+
+#realMariusDescription {
+    text-align: left;
+    width: 70%;
+    margin-right: auto;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.realMariusDescription li {
+    font-size: 1.3rem;
+    line-height: 120%
+}
+
+@media only screen and (max-width: 900px) {
+
+    .personalInfo h1 {
+        font-size: 1.5rem;
+    }
+    .personalInfo h2 {
+        font-size: 1rem;
+    }
+    button {
+        width: 35%;
+        height: 40px;
+        font-size: 1rem; 
+        background-color: #99A799;
+        box-shadow: 5px 5px grey;
+        margin: 10px 10px;
+        padding: 0  5px;
+        border-color: black;
+        color: black;
+    }
+    #realMariusDescription {
+        width: 70%;
+        margin: 10px auto 30px;
+    }
+    .personalInfo img {
+        width: 60%;
+        margin: 10px auto;
+    }
+    .aboutInfo {
+        display: grid;
+        grid-template: 350px 300px / 100%; 
+        gap: 10px;
+        margin: 30px auto;
+    }
+    .realMariusDescription li {
+        font-size: 1rem;
+        line-height: 120%
+    }
+
+}
+
+/*Contact Me Form*/
+.contactForm h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    background-color: #D3E4CD;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #99A799;
+    padding: 20px;
+    width: 70%;
+    margin: 40px auto 0;
+  }
+
+
+  /*Project Page*/
+
+  .projectHeading {
+      font-size: 3rem;
+      text-align: center;
+      margin: 50px auto;
+  }
+
+  .projects {
+      width: 70%;
+      height: 800px;
+      display: grid; 
+      grid-template: 430px 430px / 50% 50%;
+      gap: 30px 50px;
+      margin: 0 auto;
+  }
+
+    .projects h3 {
+        font-size: 1.5rem;
+    }
+
+  .project {
+      width: 100%;
+      height: 300px; 
+      border: 1px solid black;
+      box-shadow: 5px 5px grey;
+  }
+
+  .project:hover {
+      transform: scale(101%);
+  }
+
+  @media only screen and (max-width: 900px) {
+    .projects {
+        width: 80%;
+        display: grid; 
+        grid-template: 330px 330px 330px 330px / 100%;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .project {
+        width: 100%;
+        height: auto; 
+        border: 1px solid black;
+        box-shadow: 5px 5px grey;
+    }
+    .projectHeading {
+        font-size: 2rem;
+    }
+  }
