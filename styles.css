@@ -20,27 +20,17 @@ hr{
     display: flex;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     height: 60px;
-=======
-    height: 50px;
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
     width: 100%;
     background-color: #99A799; 
 }
 
 .navbar {
     display: flex;
-<<<<<<< HEAD
     height: 60px;
     width: 70%;
     margin: 0 auto;
     align-items: center;
-=======
-    height: 50px;
-    width: 70%;
-    margin: 0 auto;
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
     background-color: #99A799;    
 }
 .navLogo {
@@ -52,7 +42,6 @@ hr{
     width: 55px;
 }
 
-<<<<<<< HEAD
 .homeMenu {
     margin-left: 10px;
     font-size: 1.5rem;
@@ -60,8 +49,6 @@ hr{
     transition: all 1s;
 }
 
-=======
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
 .menu {
     text-align: center;
     margin: 10px 10px 10px auto;
@@ -488,20 +475,13 @@ a:hover {
         display: flex;
         height: 80px;
         width: 100%;
-<<<<<<< HEAD
         align-items: center;
-=======
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
         margin: 0 auto 50px;
         background-color: #99A799;    
     }
     .navLogo {
         margin: 15px auto 0 10px;
-<<<<<<< HEAD
         width: 60px;
-=======
-        width: 50px;
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
     }
     .menu {
         text-align: center;
@@ -526,7 +506,6 @@ a:hover {
         font-size: 1.1rem;
         margin-top: 5px;
     }
-<<<<<<< HEAD
     .arrows{
         display: none
     }
@@ -539,8 +518,6 @@ a:hover {
     #arrowGifTwo {
         display: none
     }
-=======
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
     .character-selection{
         width: 35%;
         display: grid;

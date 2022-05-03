@@ -4,12 +4,9 @@ const arrowOne = document.getElementById('arrowGifOne');
 const arrowTwo = document.getElementById('arrowGifTwo');
 const buttonOne = document.getElementById('button-one');
 const buttonTwo = document.getElementById('button-two');
-<<<<<<< HEAD
 //Menulogo
 const logo = document.getElementById('navLogo');
 const home = document.getElementById('homeMenu');
-=======
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
 //character
 let characterImage = document.getElementById('char-img');
 let charDescription = document.getElementById('char-description');
@@ -31,7 +28,6 @@ let coinFour = document.getElementById('coinFour');
 let coinFive = document.getElementById('coinFive');
 let coinSix = document.getElementById('coinSix');
 
-<<<<<<< HEAD
 
 //logo hover effect
 
@@ -43,8 +39,6 @@ logo.onmouseout = () => {
     homeMenu.style.display = "none";
 }
 
-=======
->>>>>>> 21e3662b66a5f86fc384da06e9682efa9762122b
 
 //button click effect
 buttonOne.onmouseover = () => {
