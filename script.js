@@ -4,6 +4,7 @@ const arrowOne = document.getElementById('arrowGifOne');
 const arrowTwo = document.getElementById('arrowGifTwo');
 const buttonOne = document.getElementById('button-one');
 const buttonTwo = document.getElementById('button-two');
+const chosenCharacter = document.getElementById('chosenCharacter');
 //Menulogo
 const logo = document.getElementById('navLogo');
 const home = document.getElementById('homeMenu');
@@ -27,7 +28,6 @@ let coinThree = document.getElementById('coinThree');
 let coinFour = document.getElementById('coinFour');
 let coinFive = document.getElementById('coinFive');
 let coinSix = document.getElementById('coinSix');
-
 
 //logo hover effect
 
@@ -73,9 +73,17 @@ buttonTwo.onmouseup = () => {
     buttonTwo.style.backgroundColor = "#99A799";
 }
 
+buttonTwo.addEventListener('click', () => {
+    chosenCharacter.innerHTML = 'CASUAL MARIUS';
+})
+
+buttonOne.addEventListener('click', () => {
+    chosenCharacter.innerHTML = 'BUSINESS MARIUS';
+})
+
 //Content switch between Business and Casual Marius
-buttonTwo.onclick = () => {
-    characterImage.src="imgs/Marius Sprite 2.gif";
+buttonTwo.addEventListener('click', () => {
+    characterImage.src='imgs/Marius Sprite 2.gif';
     charDescription.innerHTML = 'Casual Marius has his strengths in his empathy and creativity. He gets a power-up when listening to music. He has the ability to hyperfocus on a topic which he loves.'
     skillOne.innerHTML = 'Open-minded and curious';
     skillTwo.innerHTML = 'Creative and imaginative';
@@ -93,9 +101,10 @@ buttonTwo.onclick = () => {
     coinFive.src = 'imgs/three_coins.png';
     traitSix.innerHTML = 'Time Management';
     coinSix.src = 'imgs/two_coins.png';
-}
+});
 
-buttonOne.onclick = () => {
+
+buttonOne.addEventListener('click', () => {
     characterImage.src="imgs/Marius Sprite.gif";
     charDescription.innerHTML = 'Business Marius is an allrounder who can pick up any skill in a short amount of time. He performs best if supported by a teammate. Strategic topics give him a boost while repeating to Dos slow him down.'
     skillOne.innerHTML = 'Get things done mentality';
@@ -114,5 +123,5 @@ buttonOne.onclick = () => {
     coinFive.src = 'imgs/two_coins.png';
     traitSix.innerHTML = 'Team Lead';
     coinSix.src = 'imgs/two_coins.png';
-}
+})
 

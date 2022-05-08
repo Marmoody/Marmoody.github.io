@@ -149,6 +149,18 @@ a:hover {
     color: #D3E4CD;
 }
 
+.chosenChar {
+    font-size: 2rem;
+    margin: 50px auto 10px;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 60%;
+    box-shadow: 5px 5px grey;
+    background-color: #99A799;
+    letter-spacing: 4px;
+}
+
+
 .character-info{
     background-color: #99A799;
     width: 40%;
@@ -264,16 +276,19 @@ a:hover {
 }
 
 .traits-heading{
+    display: flex;
     width: 71%;
     margin: 10px auto;
 }
 
 .traits-heading-bg{
     width: 30%;
+    height: 30%;
     display: flex;
     background-color: #99A799;
     align-items: center;
     box-shadow: 5px 5px grey;
+    margin-right: auto;
 }
 
 .traits-heading img{
@@ -289,6 +304,16 @@ a:hover {
 .hrTraits {
     display: none;
 }
+
+#mariusAttack{
+    max-width: 20%;
+    min-width:20%;
+    align-self: flex-end;
+    margin-left: 200px;
+    margin: 0;
+    padding: 0;
+}
+
 .skills{
     width: 80%;
     text-align: center;
@@ -518,6 +543,18 @@ a:hover {
     #arrowGifTwo {
         display: none
     }
+
+    .chosenChar {
+        font-size: 1.5rem;
+        margin: 20px auto 0;
+        font-weight: bold;
+        line-height: 1;
+        width: 60%;
+        box-shadow: 5px 5px grey;
+        background-color: #99A799;
+        letter-spacing: 4px;
+    }
+
     .character-selection{
         width: 35%;
         display: grid;
@@ -573,6 +610,7 @@ a:hover {
         display: none;
     }
     .traits-heading{
+        display: block;
         width: 70%;
         margin: 10px auto;
         align-content: center;
@@ -590,6 +628,12 @@ a:hover {
     .traits-heading-bg h2{
         font-size: 1.5rem;
     }
+    #mariusAttack{
+       max-width: 100%; 
+       min-width: 100%;
+       margin-top: 30px;
+    }
+
     .skills{
         width: 100%;
         grid-template: 100px 100px 100px/ 50% 50%;
@@ -735,7 +779,7 @@ button {
     }
     .aboutInfo {
         display: grid;
-        grid-template: 350px 300px / 100%; 
+        grid-template: 250px 300px / 100%; 
         gap: 10px;
         margin: 30px auto;
     }

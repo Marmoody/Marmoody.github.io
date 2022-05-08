@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39a0a5e4f3.js" crossorigin="anonymous"></script>
-    <script src="script.js" async></script>
+    <script src="aboutScript.js" async></script>
     <title>About Me</title>
 </head>
 <body>
     <section class="navigation">
         <div class="navbar">
-            <a href="index.html"><img src="imgs/Marius Logo.png" alt="" class="navLogo"></a>
+            <a href="index.html"><img src="imgs/Marius Logo.png" alt="" class="navLogo" id="navLogo"></a>
+            <p class="homeMenu" id="homeMenu">Home</p>
             <div class="menu">
                 <a href="https://www.linkedin.com/in/marius-westers-6aba8783/" class="menuLink">LinkedIn</a>
                 <a href="contact.html" class="menuLink">Contact Me</a>
@@ -28,12 +29,16 @@
     <section class="personalInfo">
         <h1>Hi, my name is Marius Westers!</h1>
         <h2>and this is what I look like in real life:</h2>
+        <div class="arrows" id="arrows">
+            <img src="imgs/Arrow.gif" alt="arrow" class="arrowGif" id="arrowGifOne">
+            <img src="imgs/Arrow.gif" alt="arrow" class="arrowGif" id="arrowGifTwo">
+        </div>
         <div class="character-selection">
-            <div id="button-one" class="character-type char-button"><p>Business Marius</p></div>
-            <div id="button-two" class="character-type char-button"><p>Casual Marius</p></div>
+            <div id="button-three" class="character-type char-button"><p>Business Marius</p></div>
+            <div id="button-four" class="character-type char-button"><p>Casual Marius</p></div>
         </div>
         <div class="aboutInfo">
-            <img class="realMarius" src="imgs/Marius mit Hund.jpg" alt="">
+            <img class="realMarius" id="realMarius" src="imgs/Bewerbungsfoto Marius.jpg" alt="">
             <div id="realMariusDescription" class="realMariusDescription">
                 <ul>
                     <li>I work in Business Development.</li>
