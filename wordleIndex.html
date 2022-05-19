@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39a0a5e4f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="wordleStyles.css">
+</head>
+<body>
+    <section class="navigation">
+        <div class="navbar">
+            <a href="index.html"><img src="imgs/Marius Logo.png" alt="" class="navLogo" id="navLogo"></a>
+            <p class="homeMenu" id="homeMenu">Home</p>
+            <div class="menu">
+                <a href="https://www.linkedin.com/in/marius-westers-6aba8783/" class="menuLink">LinkedIn</a>
+                <a href="contact.html" class="menuLink">Contact Me</a>
+                <a href="projects.html" class="menuLink">My Projects</a>
+                <a href="aboutme.html" class="menuLink">About Me</a>
+            </div>
+        </div>
+    </section>
+    <div class="introbox">
+        <img src="https://cdn.shopify.com/s/files/1/0503/8522/3842/files/OWG_Logo_red.png?v=1621259731" alt="" class="logo">
+        <div class="intro">
+            <h1>WILDES WORDLE</h1>
+            <p>Gesucht ist ein Otto Wilde Wort. Du hast 5 Versuche! Hast du einen Buchstaben an der richtigen Stelle geraten, färbt sich das Feld grün. Hast du einen richtigen Buchstaben, aber an der falschen Stelle erraten, färbt sich das Feld gelb. Ist der Buchstabe nicht im gesuchten Wort vorhanden, färbt sich das Feld rot.</p>
+        </div>
+    </div>
+    <button id="button" class="button">Start Game</button>
+    <div id="game"></div>
+    <button id="checkButton" class="button">Check Input</button>
+    <script src="wordleScript.js"></script>
+</body>
+</html>

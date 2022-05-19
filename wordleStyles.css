@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+    background-color: black; 
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: black;  
+    font-family: 'VT323';
+    font-size: 18px;
+    color: white;  
+}
+.navLogo {
+    margin: 0 auto 0 30px;
+    width: 50px;
+}
+
+.navLogo:hover {
+    width: 55px;
+}
+
+.homeMenu {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    display: none;
+    transition: all 1s;
+    color: #bf2000;
+}
+
+.menu {
+    text-align: center;
+    margin: 10px 10px 10px auto;
+}
+
+.menuLink {
+    margin: 0 20px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bf2000;
+}
+
+.menuLink:hover {
+    color: #bf2000;
+}
+
+.introbox {
+    display: flex;
+    justify-content:center;
+}
+
+.intro {
+    margin: 10px;
+    font: 1rem monaco, monospace; 
+    color: white;
+    width: 300px;
+}
+
+.intro h1 {
+    margin: 10px;
+    font: 3rem monaco, monospace; 
+    color: white;
+    width: 300px;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    margin: auto 50px;
+}
+
+#game {
+    background-color: white;
+    max-width: 900px;
+    width: auto;
+    height: auto;
+    min-height: 100px;
+    display: block;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.divTwo {
+    display: flex;
+    height: 100px;
+    width: 60px;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.inputField {
+    height: 90px;
+    width: 55px;
+    background-color: lightgray;
+    text-align: center;
+    font: 3rem monaco, monospace; 
+}
+
+.button {
+    margin: 30px auto;
+    background-color: #bf2000;
+    font: 2rem monaco, monospace; 
+    display: inline-block;
+    border: none;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+
+}
+
+#checkButton {
+    visibility: hidden;
+}
+
+.divBox {
+    display: flex;
+    max-width: 900px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
