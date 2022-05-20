@@ -131,7 +131,10 @@ a:hover {
     width: 240px;
     height: 60px;
     text-align: center;
+}
 
+.button:hover{
+    background-color: #8f1800;
 }
 
 #checkButton {
@@ -146,4 +149,19 @@ a:hover {
     margin: 0 auto;
     justify-content: space-around;
     text-align: center;
+}
+
+.endDiv {
+    width: 500px;
+    height: 400px;
+    background-color: grey;
+    position: fixed;
+    left: 32%;
+    top: 25%;
+    display: none;
+    font: 1rem monaco, monospace; 
+}
+
+.endDiv img {
+    width: 40%;
 }

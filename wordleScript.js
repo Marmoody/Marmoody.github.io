@@ -2,6 +2,8 @@ const words = ["OFB", "G32", "Otto", "Wilde", "Arbeiten", "Düsseldorf", "Startu
 const game = document.getElementById('game');
 const btn = document.getElementById('button');
 const checkbtn = document.getElementById('checkButton');
+let endDiv = document.getElementById('endDiv');
+const endBtn = document.getElementById('endButton');
 let numOfLetters = 0;
 let chosenWord;
 let custid = 0;
@@ -75,10 +77,10 @@ const checkInputValues = () => {
             console.log(guessWord);
             if (inputVal == chosenWord[i]) {
                 inputFie.style.backgroundColor = "green";
+            } else if (inputVal.length == 0) {
+                inputFie.style.backgroundColor = "#d12502";
             } else if (chosenWord.includes(inputVal)) {
                 inputFie.style.backgroundColor = "yellow";
-            } else if (inputVal == null || inputVal == "") {
-                inputFie.style.backgroundColor = "#d12502";
             } else {
                 inputFie.style.backgroundColor = "#d12502";
             }
@@ -92,28 +94,41 @@ const checkInputValues = () => {
             console.log(inputVal);
             if (inputVal == chosenWord[j]) {
                 inputFie.style.backgroundColor = "green";
+            } else if (inputVal.length == 0) {
+                inputFie.style.backgroundColor = "#d12502";
             } else if (chosenWord.includes(inputVal)) {
                 inputFie.style.backgroundColor = "yellow";
-            } else if (inputVal == null || inputVal == "") {
-                inputFie.style.backgroundColor = "red";
             } else {
-                inputFie.style.backgroundColor = "red";
+                inputFie.style.backgroundColor = "#d12502";
             }
             j++;
         }
     }
     
     if (guesses <= 4 && guessWord.join('').toLowerCase() === chosenWord.toLowerCase()) {
-        alert('Glückwunsch, du hast es erraten!');
+        //alert('Glückwunsch, du hast es erraten!');
+        endDiv.style.display = 'inline'
+        document.getElementById('endH2').innerHTML = 'Glückwunsch! Du hast es erraten!';
+        document.getElementById('endP').innerHTML = 'Du kennst anscheinend Otto Wilde ganz gut! Mach weiter so!';
+        document.getElementById('endImg').src = "imgs/Happy Karl.png"
         clear();
     } else if (guesses === 4 && guessWord.join('').toLowerCase() != chosenWord.toLowerCase()) {
-        alert('Game Over! Try Again!')
+        //alert('Game Over! Try Again!')
+        endDiv.style.display = 'inline';
+        document.getElementById('endH2').innerHTML = 'Leider nicht erraten. Versuch es erneut!';
+        document.getElementById('endP').innerHTML = 'Da musst du Otto Wilde noch etwas besser kennenlernen ;)';
+        document.getElementById('endImg').src = "imgs/Sad Karl.png"
         clear();
     } else {
         guessWord = [];
         guesses++;
         appendNewDivs();
     }
+}
+
+const endBtnFunction = () => {
+    endDiv.style.display = 'none';
+    clear();
 }
 
 const playGame = () => {
@@ -128,3 +143,4 @@ const playGame = () => {
 
 btn.addEventListener('click', playGame);
 checkbtn.addEventListener('click', checkInputValues);
+endBtn.addEventListener('click', endBtnFunction);
